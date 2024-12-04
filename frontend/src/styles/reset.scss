@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: var(--font--normal);
+  word-break: break-all;
+}
+
+input,
+textarea,
+*[contenteditable] {
+  resize: none;
+  font-size: inherit;
+  font-family: inherit;
+  background: none;
+  appearance: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+select {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+pre,
+code {
+  font-family: var(--font--code);
+}

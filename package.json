@@ -1,0 +1,18 @@
+{
+  "name": "marky",
+  "version": "0.0.1-dev",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "scripts": {
+    "dev": "concurrently --kill-others-on-fail \"yarn workspace frontend dev\" \"yarn workspace electron dev\"",
+    "build": "yarn workspace frontend build && yarn workspace electron build"
+  },
+  "workspaces": [
+    "frontend",
+    "electron"
+  ]
+}
